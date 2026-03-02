@@ -71,10 +71,11 @@ For a more detailed setup guide, refer to the [official Paper documentation](htt
 
 ## Contributing / Posting Issues
 
-This is an open-source project that is licensed under [MIT](./LICENSE). You're welcome to fork this project and make edits as you need or want, or you can open Issues with this repo for feature requests or to suggest fixes and point out potential errors. Any and all help is welcome! ~~I'm still learning Java so some things may not... well implemented.~~
+This is an open-source project that is licensed under [MIT](./LICENSE). You're welcome to fork this project and make edits as you need or want, or you can open Issues with this repo for feature requests or to suggest fixes! Any and all help is welcome! ~~I'm still learning Java so some things are likely not well implemented.~~
 
 ---
 
 > Spawning large numbers of entities will lag or crash your server. You have been warned!
+
 
 
