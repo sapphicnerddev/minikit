@@ -18,3 +18,7 @@ commands:
   creeper:
     description: Spawns a creeper on the target (optionally charged)
     usage: /creeper <target> <charged>
+
+  sstats:
+    description: Display server system info (may be global)
+    usage: /sstats
