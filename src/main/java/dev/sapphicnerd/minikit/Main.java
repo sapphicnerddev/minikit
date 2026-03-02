@@ -17,6 +17,7 @@ public class Main extends JavaPlugin implements Listener {
         
         getCommand("smite").setExecutor(new SmiteCommand());
         getCommand("fish").setExecutor(new FishCommand());
+        getCommand("creeper").setExecutor(new CreeperCommand());
     }
 
     @EventHandler
