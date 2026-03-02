@@ -7,7 +7,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import dev.sapphicnerd.minikit.commands.SmiteCommand;
+// Made this a wildcard out of pure laziness..
+import dev.sapphicnerd.minikit.commands.*;
 
 public class Main extends JavaPlugin implements Listener {
     @Override
@@ -15,6 +16,7 @@ public class Main extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(this, this);
         
         getCommand("smite").setExecutor(new SmiteCommand());
+        getCommand("fish").setExecutor(new FishCommand());
     }
 
     @EventHandler

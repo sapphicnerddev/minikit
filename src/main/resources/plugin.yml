@@ -10,3 +10,7 @@ commands:
   smite:
     description: Lightning!
     usage: /smite <target>
+  
+  fish:
+    description: Summon n fish on the target!
+    usage: /fish <target> <num>
