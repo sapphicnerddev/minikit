@@ -14,3 +14,7 @@ commands:
   fish:
     description: Summon n fish on the target!
     usage: /fish <target> <num>
+
+  creeper:
+    description: Spawns a creeper on the target (optionally charged)
+    usage: /creeper <target> <charged>
