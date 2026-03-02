@@ -1,0 +1,12 @@
+name: Minikit
+version: 0.0.1
+main: dev.sapphicnerd.minikit.Main
+description: An experimental plugin
+author: sapphicnerddev@github
+website: https://github.com/sapphicnerddev/minikit
+api-version: '1.21.11'
+
+commands:
+  smite:
+    description: Lightning!
+    usage: /smite <target>
