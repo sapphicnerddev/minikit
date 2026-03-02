@@ -1,4 +1,8 @@
 # minikit
+
+[![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=%23000000)](#)
+![Static Badge](https://img.shields.io/badge/Maven-black?logo=apachemaven&logoColor=%23C71A36)
+
 <!-- Last edit before I start committing code I promise -->
 Minikit is a small, experimental server plugin for Minecraft 1.21.11. Specifically for PaperMC servers.
 
@@ -62,4 +66,11 @@ For a more detailed setup guide, refer to the [official Paper documentation](htt
 
 ---
 
+## Contributing / Posting Issues
+
+This is an open-source project that is licensed under [MIT](./LICENSE). You're welcome to fork this project and make edits as you need or want, or you can open Issues with this repo for feature requests or to suggest fixes and point out potential errors. Any and all help is welcome! ~~I'm still learning Java so some things may not... well implemented.~~
+
+---
+
 > Spawning large numbers of entities will lag or crash your server. You have been warned!
+
