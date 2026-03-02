@@ -1,5 +1,5 @@
 # minikit
-
+<!-- Last edit before I start committing code I promise -->
 Minikit is a small, experimental server plugin for Minecraft 1.21.11. Specifically for PaperMC servers.
 
 ## What's in the box
@@ -46,7 +46,9 @@ If you don't want to build from source, you just need the JRE, and the [PaperMC 
 If you're starting from scratch:
 
 1. Download the latest Paper JAR from [papermc.io](https://papermc.io/)
+      - Should be at least version 1.21.11
 2. Run it once with `java -jar paper-<version>.jar` — it will generate a `eula.txt`
+      - Alt: you can execute `echo eula=true > eula.txt` in your terminal.
 3. Open `eula.txt` and set `eula=true`
 4. Run the JAR again — your server is up
 
