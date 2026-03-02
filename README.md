@@ -17,7 +17,7 @@ The plugin itself does not contain a large suite of high quality, production rea
 /fish    <target> <n>              Spawns n fish on a target player
 /tban    <target> <duration>       Temporarily bans a player (duration in minutes)
 /pban    <target>                  Permanently bans a player
-/mpardon  <target>                 Pardons a banned player (differentiated from vanilla bans)
+/mpardon <target>                 Pardons a banned player (differentiated from vanilla bans)
 /smite   <target>                  ⚡️⚡️
 /jail    <target> <duration>       Traps a player in bedrock (duration in seconds)
 /gm      <on/off>                  Toggles godmode for a player
@@ -76,6 +76,7 @@ This is an open-source project that is licensed under [MIT](./LICENSE). You're w
 ---
 
 > Spawning large numbers of entities will lag or crash your server. You have been warned!
+
 
 
 
