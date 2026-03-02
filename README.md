@@ -41,6 +41,9 @@ You'll want both the Java JDK and JRE, I recommend the openJDK.
 
 Once you've got the repo cloned with `git clone` or your choice of repo management, it's as easy as running `mvn` to build the plugin.
 
+> [!NOTE]
+> If you're building from source, we assume that you already have an IDE like IntelliJ or VSCode setup for Java development.
+
 ---
 
 If you don't want to build from source, you just need the JRE, and the [PaperMC JAR file](https://papermc.io/). The latest build of the plugin is in the [Releases](https://github.com/sapphicnerddev/minikit/releases) page.
@@ -73,4 +76,5 @@ This is an open-source project that is licensed under [MIT](./LICENSE). You're w
 ---
 
 > Spawning large numbers of entities will lag or crash your server. You have been warned!
+
 
