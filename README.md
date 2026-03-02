@@ -11,17 +11,17 @@ Minikit is a small, experimental server plugin for Minecraft 1.21.11. Specifical
 The plugin itself does not contain a large suite of high quality, production ready tools and systems. It's just a basic collection of commands that server operators (and the console) can access and make use of. Below is the list of all commands and how to use them.
 
 ```
-/flyspd  <target> <speed>              Sets a player's fly speed (float)
-/sstats                                Displays server CPU and RAM info
-/creeper <target> <charged>            Spawns a creeper on a target player
-/fish    <target> <n>                  Spawns n fish on a target player
-/tban    <target> <duration>           Temporarily bans a player (duration in minutes)
-/pban    <target>                      Permanently bans a player
-/mpardon  <target>                     Pardons a banned player (differentiated from vanilla bans)
-/smite   <target>                      ⚡️⚡️
-/jail    <target> <duration>           Traps a player in bedrock (duration in seconds)
-/gm      <on/off>                      Toggles godmode for a player
-/minikithelp                           Displays all available commands
+/flyspd  <target> <speed>          Sets a player's fly speed (float)
+/sstats                            Displays server CPU and RAM info
+/creeper <target> <charged>        Spawns a creeper on a target player
+/fish    <target> <n>              Spawns n fish on a target player
+/tban    <target> <duration>       Temporarily bans a player (duration in minutes)
+/pban    <target>                  Permanently bans a player
+/mpardon  <target>                 Pardons a banned player (differentiated from vanilla bans)
+/smite   <target>                  ⚡️⚡️
+/jail    <target> <duration>       Traps a player in bedrock (duration in seconds)
+/gm      <on/off>                  Toggles godmode for a player
+/minikithelp                       Displays all available commands
 ```
 
 Target selectors (`@a`, `@r`, `@p`) are supported. Use them wisely!
@@ -76,6 +76,7 @@ This is an open-source project that is licensed under [MIT](./LICENSE). You're w
 ---
 
 > Spawning large numbers of entities will lag or crash your server. You have been warned!
+
 
 
 
