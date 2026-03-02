@@ -33,7 +33,7 @@ public class FishCommand implements CommandExecutor {
             target.getWorld().spawnEntity(target.getLocation(), EntityType.TROPICAL_FISH);
         }
 
-        sender.sendMessage("[] Fished " + target.getName() + "!");
+        sender.sendMessage("[☀] Fished " + target.getName() + "!");
         return true;
     }
 }
