@@ -7,18 +7,29 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-// Made this a wildcard out of pure laziness..
+// Made this a wildcard out of pure laziness...
 import dev.sapphicnerd.minikit.commands.*;
 
 public class Main extends JavaPlugin implements Listener {
+
+    private void register(String name, org.bukkit.command.CommandExecutor exec) {
+        var cmd = getCommand(name);
+        if (cmd == null) {
+            getLogger().severe("Command '" + name + "' is missing from plugin.yml!");
+            return;
+        }
+        cmd.setExecutor(exec);
+    }
+
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this);
-        
-        getCommand("smite").setExecutor(new SmiteCommand());
-        getCommand("fish").setExecutor(new FishCommand());
-        getCommand("creeper").setExecutor(new CreeperCommand());
-        getCommand("sstats").setExecutor(new StatsCommand());
+
+        register("smite", new SmiteCommand());
+        register("fish", new FishCommand());
+        register("creeper", new CreeperCommand());
+        register("sstats", new StatsCommand());
+        register("jail", new JailCommand(this));
     }
 
     @EventHandler

@@ -20,5 +20,30 @@ commands:
     usage: /creeper <target> <charged>
 
   sstats:
-    description: Display server system info (may be global)
+    description: Display server system info
     usage: /sstats
+
+  jail:
+    description: Traps a player in Bedrock for <seconds>
+    usage: /jail <target> <seconds>
+
+permissions:
+  minikit.smite:
+    description: Allows use of /smite
+    default: op
+
+  minikit.fish:
+    description: Allows use of /fish
+    default: op
+
+  minikit.creeper:
+    description: Allows use of /creeper
+    default: op
+
+  minikit.stats:
+    description: Allows use of /sstats
+    default: op
+
+  minikit.jail:
+    description: Allows use of /jail
+    default: op

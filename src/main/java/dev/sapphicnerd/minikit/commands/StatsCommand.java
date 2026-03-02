@@ -1,6 +1,7 @@
 package dev.sapphicnerd.minikit.commands;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -8,24 +9,51 @@ import org.bukkit.command.CommandSender;
 public class StatsCommand implements CommandExecutor {
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label) {
-        sender.sendMessage("---- Server Stats and System Info ---");
-        sender.sendMessage("[⛏] Available cores: " + Runtime.getRuntime().availableProcessors());
-        sender.sendMessage("[⛏] Free memory (bytes):  " + Runtime.getRuntime().freeMemory());
-        
-        long maxMemory = Runtime.getRuntime().maxMemory();
-        System.out.println("[⛏] Maximum memory (bytes): " + (maxMemory == Long.MAX_VALUE ? "N/A" : maxMemory));
-        System.out.println("[⛏] Total memory available to JVM (bytes): " + Runtime.getRuntime().totalMemory());
-        sender.sendMessage("-----------------------------------");
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        String serverNameOS = System.getProperty("os.name");
-        String serverArchOS = System.getProperty("os.arch");
-        String serverVersionOS = System.getProperty("os.version");
+        Runtime runtime = Runtime.getRuntime();
 
-        sender.sendMessage("[⛏] Name: " + serverNameOS);
-        sender.sendMessage("[⛏] Version: " + serverVersionOS);
-        sender.sendMessage("[⛏] Arch: " + serverArchOS);
-        sender.sendMessage("-----------------------------------");
+        long freeMem = runtime.freeMemory() / 1024 / 1024;
+        long totalMem = runtime.totalMemory() / 1024 / 1024;
+        long maxMem = runtime.maxMemory() / 1024 / 1024;
+        long usedMem = totalMem - freeMem;
+
+        sender.sendMessage(ChatColor.GRAY + "------------------------------");
+        sender.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "Server Stats (@minikit)");
+        sender.sendMessage(ChatColor.GRAY + "------------------------------");
+
+        sender.sendMessage(ChatColor.YELLOW + "CPU Cores: "
+                + ChatColor.WHITE + runtime.availableProcessors());
+
+        sender.sendMessage(ChatColor.YELLOW + "Memory Used: "
+                + ChatColor.WHITE + usedMem + " MB");
+
+        sender.sendMessage(ChatColor.YELLOW + "Memory Free: "
+                + ChatColor.WHITE + freeMem + " MB");
+
+        sender.sendMessage(ChatColor.YELLOW + "Memory Max: "
+                + ChatColor.WHITE + maxMem + " MB");
+
+        sender.sendMessage(ChatColor.GRAY + "------------------------------");
+
+        sender.sendMessage(ChatColor.YELLOW + "OS Name: "
+                + ChatColor.WHITE + System.getProperty("os.name"));
+
+        sender.sendMessage(ChatColor.YELLOW + "OS Version: "
+                + ChatColor.WHITE + System.getProperty("os.version"));
+
+        sender.sendMessage(ChatColor.YELLOW + "Architecture: "
+                + ChatColor.WHITE + System.getProperty("os.arch"));
+
+        sender.sendMessage(ChatColor.GRAY + "------------------------------");
+
+        sender.sendMessage(ChatColor.YELLOW + "Server Version: "
+                + ChatColor.WHITE + Bukkit.getVersion());
+
+        sender.sendMessage(ChatColor.YELLOW + "Online Players: "
+                + ChatColor.WHITE + Bukkit.getOnlinePlayers().size());
+
+        sender.sendMessage(ChatColor.GRAY + "------------------------------");
 
         return true;
     }
