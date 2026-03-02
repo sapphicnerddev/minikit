@@ -21,7 +21,7 @@ public class SmiteCommand implements CommandExecutor {
             return true;
         }
 
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 9; i++) {
             target.getWorld().strikeLightning(target.getLocation());
         }
 
@@ -29,3 +29,4 @@ public class SmiteCommand implements CommandExecutor {
         return true;
     }
 }
+
