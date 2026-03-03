@@ -1,7 +1,7 @@
 # minikit
 
 [![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=%23000000)](#)
-![Static Badge](https://img.shields.io/badge/Maven-black?logo=apachemaven&logoColor=%23C71A36)
+[![Maven](https://img.shields.io/badge/Maven-black?logo=apachemaven&logoColor=%23C71A36)](#)
 
 <!-- Last edit before I start committing code I promise -->
 Minikit is a small, experimental server plugin for Minecraft 1.21.11. Specifically for PaperMC servers.
@@ -76,6 +76,7 @@ This is an open-source project that is licensed under [MIT](./LICENSE). You're w
 ---
 
 > Spawning large numbers of entities will lag or crash your server. You have been warned!
+
 
 
 
